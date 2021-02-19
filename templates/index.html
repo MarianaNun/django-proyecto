@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Proyecto blog</title>
+    </head>
+<body>
+
+{% if request.user.username %}
+
+    <p style="color:red">{{request.user.username}}</p>
+    <a href="{% url 'logout' %}">Cerrar sesion</a>
+{% else %}
+
+    <a href="{% url 'login' %}">Inicar sesion</a>
+{% endif %}
+
+{% for item in posts %}
+    <h1>{{item.titulo}}</h1>
+    <p>{{item.autor}}</p>
+ <br>
+{% endfor%}
+
+
+</body>
+</html>

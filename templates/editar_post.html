@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Editar post</title>
+    </head>
+<body>
+<form method="POST">
+{% csrf_token %}
+    {{form}}
+
+<button type="submit">Editar Post</button>
+</form>
+
+</body>
+</html>

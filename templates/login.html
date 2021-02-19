@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Logguear Usuario</title>
+    </head>
+<body>
+    <form method="POST">
+        {% csrf_token %}
+        {{form}}
+
+        <button type="submit">Login</button>
+    </form>
+
+</body>
+</html>

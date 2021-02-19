@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Crear Usuario</title>
+    </head>
+<body>
+    <form method="POST">
+        {% csrf_token %}
+        {{form}}
+
+        <button type="submit">Registrar</button>
+    </form>
+
+</body>
+</html>
